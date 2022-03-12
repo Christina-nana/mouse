@@ -1,8 +1,8 @@
 // 鼠标时间模块
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref,Ref } from 'vue'
 interface Position{
-    x:number
-    y:number
+    x:Ref<number>
+    y:Ref<number>
 }
 export default function useMouse():Position{
     let x = ref<number>(0)
